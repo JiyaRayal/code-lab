@@ -1,0 +1,13 @@
+def reverselist(head):
+    prev = None
+    curr = head
+
+    while curr:
+        next_node = curr.next
+        curr.next = prev
+        prev = curr
+        curr = next_node
+    return prev
+head = [1,2,3,4,4]
+result = reverselist(head)
+print(result)

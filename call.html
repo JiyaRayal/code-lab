@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allen — Call</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/call.css" />
+  <style>
+    #allenVideo {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(124, 106, 247, 0.4);
+      box-shadow: 0 0 60px rgba(124, 106, 247, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="call">
+    <!-- Caption Bar -->
+    <div class="caption-bar">
+      <div id="captionBox" class="caption-box">
+        <span id="captionText">Allen ready hai...</span>
+      </div>
+    </div>
+
+    <!-- Allen's Zone -->
+    <div class="allen-zone">
+      <div class="avatar-wrap" style="text-align:center;">
+        <!-- D-ID Agent yahan aayega -->
+        <div id="allenContainer">
+          <!-- Yahan D-ID ka embed/video daalenge -->
+        </div>
+      </div>
+
+      <!-- Name Tag -->
+      <div class="name-tag">
+        <div class="dot"></div>
+        <span>Allen • Online</span>
+      </div>
+
+      <!-- User PiP -->
+      <div class="pip">
+        <video id="userVideo" autoplay playsinline></video>
+        <div id="pipOff" class="pip-off">
+          📷<br>Camera Off
+        </div>
+        <div class="pip-label">YOU</div>
+      </div>
+
+      <!-- Emergency Banner -->
+      <div id="emergencyBanner" class="emergency">
+        <div class="emergency-head">
+          <span class="e-dot"></span>
+          NEED IMMEDIATE HELP?
+        </div>
+        <a href="tel:9152987821">iCall — 9152987821</a><br>
+        <a href="tel:9999666555">Vandrevala — 9999666555</a>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="endCallBtn" class="ctrl-btn btn-end">✕</button>
+      <button id="micBtn" class="ctrl-btn btn-mic">🎤</button>
+      <div id="micLabel" class="mic-lbl">Tap to speak</div>
+      <button id="kbBtn" class="ctrl-btn btn-kb">⌨️</button>
+    </div>
+
+    <div id="statusBar" class="status-bar"></div>
+
+    <!-- Text Panel -->
+    <div id="textPanel" class="text-panel">
+      <div class="text-row">
+        <textarea id="textInput" class="text-area" placeholder="Type message to Allen..." rows="1"></textarea>
+        <button id="sendBtn" class="send-btn">↑</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/crisis.js"></script>
+  <script src="js/allen.js"></script>
+  <script src="js/speech.js"></script>
+  <script src="js/voice.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
