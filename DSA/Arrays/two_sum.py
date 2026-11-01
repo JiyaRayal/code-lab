@@ -23,3 +23,16 @@ class Student(Person):
 s = Student("Jiya", 101)
 print(s.name)
 print(s.roll)
+
+def twoSum(nums , target):
+
+    complement = {}
+
+    for i in range(len(nums)):
+
+        seen = target - nums[i]
+
+        if seen in complement:
+            return [complement[seen], i]
+
+        complement[nums[i]] = i
