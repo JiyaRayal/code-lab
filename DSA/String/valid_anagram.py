@@ -16,4 +16,3 @@ def validanagram(s, t):
 s = "anagram"
 t = "nagaram"
 print(validanagram(s,t))
-

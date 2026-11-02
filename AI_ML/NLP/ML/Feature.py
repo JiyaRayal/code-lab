@@ -12,3 +12,4 @@ print("Document-Term Matrix:\n", X.toarray())
 print("Shape of Document-Term Matrix:", X.shape)
 print("Number of Features:", len(vectorizer.get_feature_names_out()))
 print("Vocabulary:", vectorizer.vocabulary_)
+
