@@ -10,3 +10,4 @@ def max_subarray(nums):
     return max_sum
 nums= [2,3,4,5]
 print(max_subarray(nums))
+
