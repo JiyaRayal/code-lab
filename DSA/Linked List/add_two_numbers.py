@@ -14,5 +14,7 @@ def two_number(l1, l2):
             l1 = l1.next
         if l2:
             l2 = l2.next
-        return dummy.next
-    
+    return dummy.next
+
+s = two_number(l1, l2)
+print(s)
